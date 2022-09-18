@@ -1,0 +1,11 @@
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+@import './components/general.scss';
+@import './components/minting-dapp.scss';
+
+@font-face {
+  font-family: BleedingPixels;
+  src: url(../fonts/BleedingPixels.ttf);
+}

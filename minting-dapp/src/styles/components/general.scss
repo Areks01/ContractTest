@@ -1,0 +1,169 @@
+
+body {
+  @apply p-6;
+  @apply min-h-screen;
+
+  @apply font-sans;
+  @apply text-neutral-800;
+}
+
+a, a:link, a:visited {
+  @apply font-semibold;
+  @apply text-primary-600;
+  text-decoration: none;
+  color:white;
+}
+
+strong {
+  @apply font-semibold;
+}
+
+main {
+  @apply flex flex-col;
+}
+
+#home a{
+  @apply w-auto;
+  height: auto;
+  font-size: 2.5vw;
+  font-family: BleedingPixels;
+  color: black;
+}
+
+#logo {
+  padding-top: 20px;
+  @apply m-auto;
+  @apply w-auto;
+  height: auto;
+  font-size: 5vw;
+  font-family: BleedingPixels;
+  color: black;
+}
+
+.bg {
+  background-color: #FE9000;
+}
+
+span.emoji {
+  @apply text-2xl;
+}
+
+.error {
+  @apply flex flex-col;
+  @apply rounded-lg;
+  @apply p-3;
+  
+  @apply text-sm;
+  @apply bg-gray-50;
+  @apply border border-slate-200;
+  @apply shadow;
+  @apply text-black;
+  text-align: center;
+  font-family: 'Arial', cursive;
+
+  &::before {
+    content: 'HOLD ON!';
+
+    @apply font-semibold;
+    @apply text-base;
+  }
+
+  button {
+    @apply inline-block;
+    @apply mt-3 ml-auto;
+    @apply px-2 py-1;
+    @apply rounded-md;
+
+    @apply text-xs;
+
+    @apply font-semibold;
+    @apply text-errortxt;
+    @apply bg-error-500;
+
+    &:hover {
+      @apply bg-error-400;
+    }
+  }
+}
+
+button {
+  @apply py-2 px-6;
+  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-popupsbg;
+  @apply border border-black border-2;
+  @apply shadow-sm;
+
+  &:hover {
+    @apply bg-neutral-100;
+  }
+
+  &.primary {
+    @apply text-primarytxt;
+    @apply border;
+    background-color: rgb(40, 40, 40);
+    border-radius: 10px;
+    
+
+    &:hover {
+      background-color: #e28000;
+    }
+
+    &:disabled {
+      @apply opacity-90;
+
+      &:hover {
+        @apply bg-primary-800;
+        @apply cursor-not-allowed;
+      }
+    }
+  }
+}
+
+input[type=text] {
+  @apply py-2 px-4;
+
+  @apply rounded-full;
+  
+  @apply font-mono font-semibold;
+  @apply text-primary-600;
+  @apply bg-popupsbg;
+  @apply border border-neutral-200;
+  @apply shadow-sm;
+  @apply outline-none;
+
+  &:focus {
+    @apply bg-neutral-50;
+    @apply border-primary-300;
+  }
+
+  &:disabled {
+    @apply opacity-50;
+
+    &:hover {
+      @apply cursor-not-allowed;
+    }
+  }
+}
+
+label {
+  @apply mt-4 mb-1 ml-1;
+
+  @apply font-semibold;
+  @apply text-sm text-primary-600;
+}
+
+img{
+  padding-top:20px; 
+  @apply m-auto;
+  max-width: 20%;
+}
+
+#alert{
+  font-size: 25px;
+  text-align: center;
+  background-color: red;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px 50px;
+  display: none;
+}
